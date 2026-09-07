@@ -1,0 +1,13 @@
+n=int(input())
+l1=list(map(int,input().split())) 
+n1=int(input())
+l2=[]
+for i in l1:
+    num=bin(i)
+    num=num[2:]
+    num=num[:-n1]
+    if num=="":
+        l2.append(0)
+        continue
+    l2.append(int(num,2))
+print(*l2)
