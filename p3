@@ -1,0 +1,14 @@
+n1=int(input())
+n2=int(input())
+a=[int(input()) for i in range(n1)]
+b=[int(input()) for i in range(n2)]
+a.extend(b)
+a=set(a)
+cl=sorted(a)
+if len(cl)%2==0:
+    m=len(cl)//2
+    s=(cl[m-1]+cl[m])/2
+    print(s)
+else:
+    m=len(cl)//2
+    print(cl[m])
