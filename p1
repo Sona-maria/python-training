@@ -1,0 +1,8 @@
+n=int(input())
+n1=bin(n)
+n2=n1[2:]
+n2=n2.replace('0','x')
+n2=n2.replace('1','0')
+d=n2.replace('x','1')
+fi=int(d,2)
+print(fi)
